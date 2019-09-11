@@ -39,6 +39,7 @@ You are provided the HTML and CSS code for this assignment in this repository. Y
   - HINT: use the id assigned to the `<textarea>` element to get access to the element.
 7. Below your 'reply' function, attach a 'click' event listener to the `<button>` element defined in the HTML file. 
   - HINT: use the id assigned to the `<button>` element to get access to the element.
+    Alternatively, you can modify the HTML to add a `<form>` element around the `<input>` and `<button>` and attach an event listener the form's `submit` event. This will allow you to use the enter key to enter input as well.
 8. Save your JavaScript code. You now have a functional simple chatbot. Try it out by opening the 'index.html' file in your browser. REMEMBER to include your JavaScript code in the ‘index.html’ file either internally or externally.
 
 ### SUBMISSION
