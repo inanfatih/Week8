@@ -44,10 +44,11 @@ You are provided the HTML and CSS code for this assignment in this repository. Y
 
 ### SUBMISSION
 
-Before submitting your assignment, remember to organize your code according to the best practices for structuring code files, as explained in the class. This means:
+Before submitting your assignment, remember to organize your code according to the best practices for structuring code files. This means:
 
 *   HTML, CSS, and JS code should be in separate files
 *   All files should be organized into their respective folders
+*   [Read this article for more info](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Dealing_with_files)
 
 ### EVALUATION
 
