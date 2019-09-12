@@ -62,6 +62,6 @@ When evaluating this assignment, we will be looking for:
 ### BONUS
 
 Try out different ‘input’ and ‘output’ statements with the chatbot. 
-Add your own CSS and/or restructure the HTML to your liking. Make your chatbot unique!
-
 HINT: you will need these in part 2.
+
+Add your own CSS and/or restructure the HTML to your liking. Make your chatbot unique!
