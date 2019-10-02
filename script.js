@@ -1,16 +1,28 @@
 //object containing inputs and outputs arrays
 let chatInputsOutputs = [
   {
-    inputs: 'Hello',
+    inputs: ['Hello', 'Hi', 'Greetings'],
     outputs: ['Hello', 'Hey', 'Greetings'],
   },
   {
-    inputs: 'What is your favourite colour?',
-    outputs: ['I am not sure.', 'White', 'Blue'],
+    inputs: [
+      'What is your favourite colour?',
+      'Who is your favourite HYF instructor?',
+      'Who is your role model?',
+    ],
+    outputs: [
+      'I am not sure.',
+      'There are too many to choose from.',
+      'I like everyone.',
+    ],
   },
   {
-    inputs: 'How are you?',
-    outputs: ['Great!', 'Not bad', 'Good'],
+    inputs: [
+      'How are you?',
+      'How is the weather today?',
+      'How is Canada doing in the Olympics?',
+    ],
+    outputs: ['Fine', 'Great', 'Not so good'],
   },
 ];
 
@@ -30,14 +42,19 @@ const answerLongest = item => {
 
 // reply function
 const reply = selectedAnswer => {
-  let question = document.getElementById('input').value.toLowerCase();
+  let question = document.getElementById('input').value;
 
   console.log(question);
+
   document.getElementById('output').value +=
     'You: ' + document.getElementById('input').value + '\n';
-  const filteredObject = chatInputsOutputs.filter(
-    item => question === item.inputs.toLowerCase(),
-  );
+
+  const filteredObject = chatInputsOutputs.filter(item => {
+    return item.inputs
+      .map(item => item.toLowerCase())
+      .includes(question.toLowerCase());
+  });
+
   console.log('filteredobject', filteredObject);
 
   if (filteredObject.length === 1) {
